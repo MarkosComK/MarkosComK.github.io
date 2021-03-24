@@ -1,0 +1,59 @@
+@charset "URF-8";
+
+body {
+    background-image: url(imagens/backgroungFHD.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.caixa-perfil {
+    width: 380px;
+    height: 450px;
+    background-color: #a1a5a6c4;
+    padding: 40px;
+    color: #003F63;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    border-color: #003F63;
+    border-width: 3px;
+}
+.quebra {
+    width: 100px;
+    height: 1px;
+    background-color: #003F63;
+    margin: auto;
+}
+.icones-sociais {
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #F2B138;
+}
+
+.icones-sociais a {
+    color: #003F68;
+}
+
+.icones-sociais a:hover{
+    color: black;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 25px;
+    letter-spacing: 1px;
+}

@@ -1,33 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarkosComK</title>
     <link rel="stylesheet" href="style.css">
-    <title>Meu Portfólio</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="bg">
-        <p>DE</p>
-        <p>SIG</p>
-        <p>N</p>
-    </div>
-    <div class="line2"></div>
-    <div class="prof-pic">
-        <img src="imagens/me.png" alt="">
-    </div>
-        <ul class="social-media">
-            <li><a href="#"><img src="imagens/githubicon.png" alt=""></a></li>
-            <li><a href="#"><img src="imagens/linkedinicon.png" alt=""></a></li>
-            <li><a href="#"><img src="imagens/igicon.png" alt=""></a></li>
-        </ul>
-    <div class="line"></div>
-    <div class="box">
-        <h1>Markos vinicius</h1>
-        <div class="texto">
-            <p>Olá. Me chamo Markos Vinicius e, estou iniciando minha carreira como desenvolvedor. Este website é o marco do meu desenvolvimento pessoal. Estou procurando criar um website responsivo que apresente minhas habilidades como dev. Logo, este site demonstra minhas habilidades como front-end <p>Se quiser conhecer um pouco mais de mim ou entrar em contato, visite minhas redes sociais logo abaixo</p></p>
+    <section class="banner" id="sec">
+        <header>
+            <a href="#" class="logo">&lt;MK&gt;</a>
+            <div id="toggle" onclick="toggle()"></div>
+        </header>
+        <div class="content">
+            <h2>Olá, Mundo! <br> Eu sou <span>Markos Vinicius</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum iste, molestiae provident qui soluta perspiciatis saepe obcaecati deleniti, vero corrupti reiciendis distinctio ut esse iusto omnis id sit? Fugit.</p>
+            <a href="#">Saiba mais</a>
         </div>
+        <ul class="sci">
+            <li><a href="https://github.com/MarkosComK" target="_blank"><img src="imagens/githubicon.png"></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank"><img src="imagens/igicon.png"></a></li>
+            <li><a href="https://www.linkedin.com/in/markos-soares-0892631a3/" target="_blank"><img src="imagens/linkedinicon.png"></a></li>
+        </ul>
+    </section>
+    <div id="navigation">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Trabalhos</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
     </div>
+    <script type="text/javascript">
+        function toggle(){
+            var sec = document.getElementById('sec')
+            var nav = document.getElementById('navigation')
+            sec.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+    </script>
 </body>
 </html>

@@ -76,6 +76,9 @@ header #toggle:after{
 .banner.active{
     transform: translate(-400px);
 }
+.sobre img{
+    border-radius: 10px;
+}
 .sobre{
     position: relative;
     width: 100%;

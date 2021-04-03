@@ -80,7 +80,7 @@ header #toggle:after{
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 50px;
     background: url(imagens/bg-sobremim.jpg);
     background-size: cover;
     display: flex;

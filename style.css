@@ -193,7 +193,7 @@ header #toggle:after{
 }
 @media (max-width: 767px){
     #sobreimg1{
-        max-width: 350px;
+        max-width: 230px;
     }
     header{
         padding: 20px 50px;

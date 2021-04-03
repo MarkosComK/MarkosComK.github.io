@@ -192,6 +192,9 @@ header #toggle:after{
     filter: invert(1);
 }
 @media (max-width: 767px){
+    #sobreimg1{
+        max-width: 400px;
+    }
     header{
         padding: 20px 50px;
     }

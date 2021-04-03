@@ -6,7 +6,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
 }
 header{
     position: absolute;
@@ -74,6 +76,37 @@ header #toggle:after{
 .banner.active{
     transform: translate(-400px);
 }
+.sobre{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    background: url(imagens/bg-sobremim.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+    z-index: 2;
+}
+.sobre{
+    color: #000;
+    margin-left: auto;
+    margin-right: auto;
+}
+#sobreimg1{
+    margin: 0 30px 0 0;
+    float: left;
+    width: 450px;
+}
+.content2{
+    margin: auto;
+    max-width: 800px;
+    text-align: justify;
+    display: inline;
+}
+.content2txt{
+    margin-top: 20px;
+} 
 #navigation{
     position: fixed;
     top: 0;

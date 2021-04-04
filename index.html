@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="meu portfólio pessoal onde procuro demonstrar minhas habilidades e falar um pouco sobre mim.">
     <title>MarkosComK</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
@@ -15,7 +16,7 @@
             <div id="toggle" onclick="toggle()"></div>
         </header>
         <div class="content">
-            <h2>Olá, Mundo! <br> Eu sou <span>&lt;Markos Vinicius&gt;</span></h2>
+            <h2>Olá, Mundo! <br> Eu sou <span>&lt;</span><span class="type"></span><span>&gt;</span></h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum iste, molestiae provident qui soluta perspiciatis saepe obcaecati deleniti, vero corrupti reiciendis distinctio ut esse iusto omnis id sit? Fugit.</p>
             <a href="#sob">Saiba mais</a>
         </div>
@@ -54,9 +55,18 @@
             <li><a href="#">Contato</a></li>
         </ul>
     </div>
+    <script src="typed.min.js"></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: ['Markos Vinicius', 'Designer', 'Desenvolvedor', 'Estudante', 'Programador'],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop:true,
+        });
+    </script>
     <script type="text/javascript">
 
-/*        imgs = ["imagens/sobre-img1.png", "imagens/sobre-img2.png"]
+       imgs = ["imagens/sobre-img1.png", "imagens/sobre-img2.png"]
 
         function trocarimg(){
             var img = document.getElementById('sobreimg1')
@@ -67,9 +77,8 @@
                     img.src = imgs[0]
                 }
             } while(img.src <= imgs.length)
-        }*/
-
-        function toggle(){
+        }
+           function toggle(){
             var sec = document.getElementById('sec')
             var nav = document.getElementById('navigation')
             sec.classList.toggle('active')

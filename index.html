@@ -70,15 +70,6 @@
 
        imgs = ["imagens/sobre-img1.png", "imagens/sobre-img2.png"]
 
-        function trocarimg(){
-            var img = document.getElementById('sobreimg1')
-            img.src = imgs[0]
-            do{
-                img.src = img[1]
-                if(img.src == imgs.length){
-                    img.src = imgs[0]
-                }
-            } while(img.src <= imgs.length)
         }
            function toggle(){
             var sec = document.getElementById('sec')

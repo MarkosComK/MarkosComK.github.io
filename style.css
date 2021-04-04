@@ -201,6 +201,9 @@ header #toggle:after{
     .content p{
         text-align: left;
     }
+    .mediatype{
+        height: 100px;
+    }
     #sobreimg1{
         max-width: 230px;
     }

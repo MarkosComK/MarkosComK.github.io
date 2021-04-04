@@ -195,6 +195,12 @@ header #toggle:after{
     filter: invert(1);
 }
 @media (max-width: 767px){
+    .content {
+        max-width: 200px;
+    }
+    .content p{
+        text-align: left;
+    }
     #sobreimg1{
         max-width: 230px;
     }

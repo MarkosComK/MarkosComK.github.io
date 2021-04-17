@@ -1,80 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="meu portfólio pessoal onde procuro demonstrar minhas habilidades e falar um pouco sobre mim.">
-    <title>MarkosComK</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="media.css">
+    <title>Markos Com K</title>
 </head>
 <body>
-    <section class="banner" id="sec">
-        <header>
-            <a href="#" class="logo">&lt;MK&gt;</a>
-            <div id="toggle" onclick="toggle()"></div>
-        </header>
-        <div class="content">
-            <h2>Olá, Mundo! <br> Eu sou <div class="mediatype"><span>&lt;</span><span class="type"></span><span>&gt;</span></div></h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum iste, molestiae provident qui soluta perspiciatis saepe obcaecati deleniti, vero corrupti reiciendis distinctio ut esse iusto omnis id sit? Fugit.
-                </p>
-            <a href="#sob">Saiba mais</a>
-        </div>
-        <ul class="sci">
-            <li><a href="https://github.com/MarkosComK" target="_blank"><img src="imagens/githubicon.png"></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank"><img src="imagens/igicon.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/markos-soares-0892631a3/" target="_blank"><img src="imagens/linkedinicon.png"></a></li>
-        </ul>
-    </section>
-    <section class="sobre" id="sob">
-        <div class="content2">
-            <img src="imagens/sobre-img1.jpg" alt="" id="sobreimg1" onload="trocarimg()">
-            <div class="content2txt">
-                <h2>Sobre mim</h2>
-                <br>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, dolore cupiditate tempora minus vitae repellendus molestias, velit sint consectetur aliquam nihil officiis modi officia, cumque provident iure voluptatem! Aut, nulla.
-                </p>
-                <br>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda doloribus corporis molestias tempore accusamus eos similique quo soluta. Eos reprehenderit commodi perferendis molestias autem sequi, eius in laborum id.
-                </p>
-                <br>
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis commodi cum eum cupiditate! Voluptates eligendi praesentium, sequi maiores doloribus non mollitia harum cumque sapiente? Dolores aliquam eligendi minima a velit.
-                </p>
+    <!-- Barra de navegação -->
+    <header>
+        <div class="response">
+            <div class="container">
+                <div class="logo">
+                    <h4>&lt;K&gt;</h4>
+                </div>
+                <ul class="links">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre mim</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#"><img src="imagens/githubicon.png" alt=""></a></li>
+                    <li><a href="#"><img src="imagens/linkedinicon.png" alt=""></a></li>
+                </ul>
             </div>
         </div>
-    </section>
-    <div id="navigation">
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#sob" onclick="toggle()">Sobre mim</a></li>
-            <li><a href="#">Trabalhos</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-    </div>
-    <script src="typed.min.js"></script>
-    <script>
-        var typed = new Typed('.type', {
-            strings: ['Markos Vinicius', 'Designer', 'Desenvolvedor', 'Estudante', 'Programador'],
-            typeSpeed: 60,
-            backSpeed: 60,
-            loop:true,
-        });
-    </script>
-    <script type="text/javascript">
-
-           function toggle(){
-            var sec = document.getElementById('sec')
-            var nav = document.getElementById('navigation')
-            sec.classList.toggle('active')
-            nav.classList.toggle('active')
-        }
-
-    </script>
+    </header>
 </body>
 </html>

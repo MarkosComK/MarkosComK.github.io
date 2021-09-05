@@ -23,12 +23,18 @@ Este é o meu portfólio pessoal desenvolvido com objetivo de apresentar e regis
 
 Construir um portfólio visando a experiência do usuário e a boa utilização das ferramentas de busca.
 
+🔴 - À iniciar
+🟠 - Ainda em inicio
+🟡 - Em progresso/aprendendo
+🟢 - Concluido/Aprimorando
+
 - Botões interativos. 🟢
 - Sobreposição de elemtos. 🟠
 - Animações dinâmicas em CSS. 🟡
 - Animações dinâmicas em JS. 🔴
 - Boas práticas de SEO. 🔴
 - Utilização de recursos alternativos do HTML. 🟡
+- Responsividade em dispositivos móveis 🔴
 
 ### Capturas de tela
 

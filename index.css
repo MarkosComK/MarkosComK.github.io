@@ -9,6 +9,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    background-color: #F6f6f6;
 }
 
 header {
@@ -23,6 +24,7 @@ header {
 
     color: #000;
     background:#FFF;
+    background-image: linear-gradient(#d3d3d3, #F6F6F6);
 
     z-index: 1;
 }
@@ -107,6 +109,13 @@ main img {
     border-radius: 50%;
 }
 
+
+.autores{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
 .section1 {
     position: relative;
     max-width: 783px;
@@ -175,4 +184,24 @@ footer {
 
 .footer-content{
     margin-top: 70px;
+}
+
+#svgs{
+    height: 50px;
+}
+
+#svgs a{
+    text-decoration: none;
+}
+
+#instagram:hover{
+    fill: #9E452A;
+}
+
+#github:hover{
+    fill: #9E452A;
+}
+
+#twitter:hover{
+    fill: #9E452A;
 }

@@ -49,7 +49,7 @@ Rodapé
 
 ### Paleta de cores
 
-![Paleta de cores](./imagens/paleta-de-cores.png)
+![Paleta de cores](./imagens/Paleta-de-cores.png)
 
 ### Links
 

@@ -83,6 +83,10 @@ main {
 
 }
 
+span{
+    color: #9E452A;
+}
+
 main h1 {
     position: relative;
     top: 200px;
@@ -159,12 +163,6 @@ main img {
     color: #FFF;
 }
 
-
-.arrow {
-    position: absolute;
-    top: 23.5px;
-    right: 24px;
-}        
 
 footer {
     position: absolute;

@@ -1,0 +1,141 @@
+@import './header';
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,700;1,100;1,200;1,300;1,400;1,500;1,700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6f6f6;
+}
+
+main {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 1024px;
+    max-width: 1080px;
+
+    text-align: center;
+
+    h1 {
+        position: relative;
+        top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    
+        max-width: 755px;
+    
+        font-size: 30px;
+    }
+
+    img {
+        position: relative;
+        top: 433px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 350px;
+        border-radius: 50%;
+    }
+}
+
+.autores{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.section1 {
+    position: relative;
+    max-width: 783px;
+
+
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0px 20px;
+
+}
+
+.section2{
+    position: relative;
+
+    height: 175px;
+
+    text-align: center;
+
+    margin-top: 100px;
+
+}
+
+.line1{
+    height: 1px;
+    width: 100%;
+
+    background: #626161;
+}
+.line2{
+    height: 1px;
+    width: 100%;
+
+    background: #626161;
+}
+
+.contact-button{
+    position: relative;
+
+    width: 224px;
+    height: 57px;
+
+    border: 1px solid #9E452A;
+    border-radius: 10px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover{
+        cursor: pointer;
+        background: #9E453A;
+        color: #FFF;
+    }
+}
+
+footer {
+    position: absolute;
+
+    width: 100%;
+    height: 165px;
+
+    text-align: center;
+}
+
+.footer-content{
+    margin-top: 70px;
+}
+
+#svgs{
+    height: 50px;
+}
+
+#svgs a{
+    text-decoration: none;
+}
+
+#instagram:hover{
+    fill: #9E452A;
+}
+
+#github:hover{
+    fill: #9E452A;
+}
+
+#twitter:hover{
+    fill: #9E452A;
+}

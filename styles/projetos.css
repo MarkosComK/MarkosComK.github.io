@@ -58,6 +58,10 @@ header ul {
 header ul a {
   color: #000;
   text-decoration: none;
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 header ul a:hover {
@@ -114,10 +118,17 @@ a {
   color: #000;
 }
 
+.proj1 h2, .proj2 h2 {
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
+}
+
 .proj1 h2:hover, .proj2 h2:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #9E452A;
           text-decoration-color: #9E452A;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .proj1, .proj2 {
@@ -142,10 +153,17 @@ a {
           justify-content: space-between;
 }
 
+.proj-description a {
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
+}
+
 .proj-description a:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #9E452A;
           text-decoration-color: #9E452A;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 img {
@@ -156,6 +174,8 @@ img {
 img:hover {
   cursor: pointer;
   opacity: 1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 .section2 {
@@ -191,12 +211,19 @@ img:hover {
   cursor: pointer;
   background: #9E453A;
   color: #FFF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .arrow {
   position: absolute;
   top: 23.5px;
   right: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 footer {
@@ -220,13 +247,19 @@ footer {
 
 #instagram:hover {
   fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #github:hover {
   fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-#twitter:hover {
+#linkedin:hover {
   fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 /*# sourceMappingURL=projetos.css.map */

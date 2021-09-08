@@ -99,12 +99,22 @@ main {
 
     margin-left: auto;
     margin-right: auto;
-
     &:hover{
         cursor: pointer;
         background: #9E453A;
         color: #FFF;
+        transition: 0.4s;
     }
+}
+.arrow {
+    position: absolute;
+    top: 23.5px;
+    right: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
 }
 
 footer {
@@ -130,12 +140,15 @@ footer {
 
 #instagram:hover{
     fill: #9E452A;
+    transition: 0.4s;
 }
 
 #github:hover{
     fill: #9E452A;
+    transition: 0.4s;
 }
 
-#twitter:hover{
+#linkedin:hover{
     fill: #9E452A;
+    transition: 0.4s;
 }

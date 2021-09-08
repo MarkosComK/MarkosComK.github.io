@@ -58,6 +58,10 @@ header ul {
 header ul a {
   color: #000;
   text-decoration: none;
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 header ul a:hover {
@@ -151,8 +155,27 @@ body {
   width: 100%;
 }
 
-.media-icon {
-  width: 40px;
-  height: 40px;
+#instagram:hover {
+  fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#github:hover {
+  fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#linkedin:hover {
+  fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#email:hover {
+  fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 /*# sourceMappingURL=contato.css.map */

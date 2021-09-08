@@ -58,6 +58,10 @@ header ul {
 header ul a {
   color: #000;
   text-decoration: none;
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 header ul a:hover {
@@ -159,6 +163,19 @@ main img {
   cursor: pointer;
   background: #9E453A;
   color: #FFF;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.arrow {
+  position: absolute;
+  top: 23.5px;
+  right: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 footer {
@@ -182,13 +199,19 @@ footer {
 
 #instagram:hover {
   fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 #github:hover {
   fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-#twitter:hover {
+#linkedin:hover {
   fill: #9E452A;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 /*# sourceMappingURL=index.css.map */

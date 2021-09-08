@@ -52,9 +52,14 @@ a{
     color: #000;
 }
 
+.proj1 h2, .proj2 h2{
+    text-decoration-color: #FFF;
+}
+
 .proj1 h2:hover, .proj2 h2:hover{
     text-decoration: underline;
     text-decoration-color: #9E452A;
+    transition: 0.6s;
 }
 
 .proj1, .proj2{
@@ -75,9 +80,14 @@ a{
     justify-content: space-between;
 }
 
+.proj-description a{
+    text-decoration-color: #FFF;
+}
+
 .proj-description a:hover{
     text-decoration: underline;
     text-decoration-color: #9E452A;
+    transition: 0.6s;
 }
 
 img{
@@ -86,6 +96,7 @@ img{
     &:hover{
         cursor: pointer;
         opacity: 1;
+        transition: 0.6s;
     }
 }
 
@@ -128,13 +139,19 @@ img{
         cursor: pointer;
         background: #9E453A;
         color: #FFF;
+        transition: 0.4s;
     }
 }
 .arrow {
     position: absolute;
     top: 23.5px;
     right: 24px;
-}        
+} 
+
+a{
+    text-decoration: none;
+    color: #000;
+}
 
 footer {
     position: absolute;
@@ -159,12 +176,15 @@ footer {
 
 #instagram:hover{
     fill: #9E452A;
+    transition: 0.4s;
 }
 
 #github:hover{
     fill: #9E452A;
+    transition: 0.4s;
 }
 
-#twitter:hover{
+#linkedin:hover{
     fill: #9E452A;
+    transition: 0.4s;
 }

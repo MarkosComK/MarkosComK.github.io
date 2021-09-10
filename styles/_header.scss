@@ -56,3 +56,17 @@ header {
     }
       
 }
+
+@media(max-width:475px) {
+   header{
+       width: 100%;
+       .logo{
+           font-size: 2em;
+            left: 0;
+       }
+       ul{
+           width: 100%;
+           font-size: 1em;
+       }
+   }
+}

@@ -70,6 +70,20 @@ header ul a:hover {
           text-decoration-color: #9E453A;
 }
 
+@media (max-width: 475px) {
+  header {
+    width: 100%;
+  }
+  header .logo {
+    font-size: 2em;
+    left: 0;
+  }
+  header ul {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -131,6 +145,14 @@ main img {
   font-size: 1em;
 }
 
+.projetos::before {
+  display: block;
+  content: '';
+  height: 1px;
+  background-color: #666;
+  margin: 100px 0px;
+}
+
 .projetos {
   position: relative;
   margin: auto;
@@ -145,6 +167,15 @@ main img {
   margin-right: auto;
   font-size: 1.8em;
   max-width: 755px;
+}
+
+.projetos h2::after {
+  display: block;
+  content: '';
+  height: 1px;
+  background-color: #666;
+  width: 100%;
+  margin: 100px 0px;
 }
 
 .projetos .proj1 h3, .projetos .proj2 h3 {
@@ -313,6 +344,12 @@ svg:hover {
 }
 
 #linkedin:hover {
+  fill: #9E452A;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+#email:hover {
   fill: #9E452A;
   -webkit-transition: 0.1s;
   transition: 0.1s;

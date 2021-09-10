@@ -98,27 +98,17 @@ main h1 {
   margin-left: auto;
   margin-right: auto;
   max-width: 755px;
-  font-size: 30px;
+  font-size: 2em;
 }
 
 main img {
   position: relative;
-  top: 433px;
+  top: 233px;
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
+  width: 100%;
+  max-width: 375px;
   border-radius: 50%;
-}
-
-.autores {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 16px;
 }
 
 .section1 {
@@ -130,6 +120,109 @@ main img {
   padding: 0px 20px;
 }
 
+.autores {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1em;
+}
+
+.projetos {
+  position: relative;
+  margin: auto;
+  max-width: 1080px;
+}
+
+.projetos h2 {
+  position: relative;
+  top: 100px;
+  padding: 0px 47px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.8em;
+  max-width: 755px;
+}
+
+.projetos .proj1 h3, .projetos .proj2 h3 {
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
+}
+
+.projetos .proj1 h3:hover, .projetos .proj2 h3:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9E452A;
+          text-decoration-color: #9E452A;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.projetos .proj1, .projetos .proj2 {
+  margin: 0px 27px;
+}
+
+.projetos .proj1 h2, .projetos .proj2 h2 {
+  margin: 50px 0px 55px;
+}
+
+.projetos .proj1 p, .projetos .proj2 p {
+  margin: 23px 0px 48px;
+}
+
+.projetos .proj-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projetos .proj2::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: #666;
+}
+
+.projetos .proj-description a {
+  -webkit-text-decoration-color: #FFF;
+          text-decoration-color: #FFF;
+}
+
+.projetos .proj-description a:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9E452A;
+          text-decoration-color: #9E452A;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.projetos img {
+  max-width: 100%;
+  opacity: 0.8;
+}
+
+.projetos img:hover {
+  cursor: pointer;
+  opacity: 1;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.section2::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: #626161;
+}
+
 .section2 {
   position: relative;
   height: 175px;
@@ -137,13 +230,9 @@ main img {
   margin-top: 100px;
 }
 
-.line1 {
-  height: 1px;
-  width: 100%;
-  background: #626161;
-}
-
-.line2 {
+.section2::after {
+  content: '';
+  display: inline-block;
   height: 1px;
   width: 100%;
   background: #626161;
@@ -167,12 +256,6 @@ main img {
   transition: 0.4s;
 }
 
-.arrow {
-  position: absolute;
-  top: 23.5px;
-  right: 24px;
-}
-
 a {
   text-decoration: none;
   color: #000;
@@ -189,29 +272,49 @@ footer {
   margin-top: 70px;
 }
 
-#svgs {
-  height: 50px;
+#svgsbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+svg {
+  padding: 0px 5px;
 }
 
 #svgs a {
   text-decoration: none;
 }
 
-#instagram:hover {
-  fill: #9E452A;
+svg:hover {
+  width: 40px;
+  height: 40px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+#instagram:hover {
+  fill: #9E452A;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 #github:hover {
   fill: #9E452A;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 #linkedin:hover {
   fill: #9E452A;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 /*# sourceMappingURL=index.css.map */

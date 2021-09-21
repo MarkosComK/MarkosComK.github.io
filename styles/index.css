@@ -167,6 +167,27 @@ header .bar1, header .bar2, header .bar3 {
   }
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f6f6f6;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9E452A;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -324,6 +345,8 @@ main img {
 
 .projetos img:hover {
   cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   opacity: 1;
   -webkit-transition: 0.6s;
   transition: 0.6s;

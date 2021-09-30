@@ -129,10 +129,11 @@ header .bar1, header .bar2, header .bar3 {
         -ms-flex-align: center;
             align-items: center;
     position: absolute;
+    top: 40vh;
     right: 0;
-    top: 50vh;
-    border-radius: 30px;
-    height: 35vh;
+    background-color: #f6f6f6;
+    border-radius: 10px 0 0 10px;
+    height: 50vh;
     width: 35vw;
     -webkit-backdrop-filter: blur(9px);
             backdrop-filter: blur(9px);

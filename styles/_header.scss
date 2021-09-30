@@ -100,10 +100,11 @@ header {
             flex-direction: column;
             align-items: center;
             position: absolute;
+            top: 40vh;
             right: 0;
-            top: 50vh;
-            border-radius: 30px;
-            height: 35vh;
+            background-color: #f6f6f6;
+            border-radius: 10px 0 0 10px;
+            height: 50vh;
             width: 35vw;
             backdrop-filter: blur(9px);
             transform: translateX(100%);

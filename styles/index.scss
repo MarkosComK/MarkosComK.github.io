@@ -99,25 +99,25 @@ main {
         width: 100%;
         margin: 100px 0px;
     }
-    .proj1 h3, .proj2 h3{
+    .proj1 h3, .proj2 h3, .proj3 h3{
         text-decoration-color: #FFF;
     }
     
-    .proj1 h3:hover, .proj2 h3:hover{
+    .proj1 h3:hover, .proj2 h3:hover, .proj3 h3:hover{
         text-decoration: underline;
         text-decoration-color: #9E452A;
         transition: 0.6s;
     }
     
-    .proj1, .proj2{
+    .proj1, .proj2, .proj3{
         margin: 0px 27px;
     }
     
-    .proj1 h2, .proj2 h2{
+    .proj1 h2, .proj2 h2, .proj3 h2{
         margin: 50px 0px 55px;
     }
     
-    .proj1 p, .proj2 p{
+    .proj1 p, .proj2 p, .proj3 p{
         margin: 23px 0px 48px;
     }
     
@@ -128,6 +128,13 @@ main {
     }
 
     .proj2::before{
+        display: block;
+        content: '';
+        height: 1px;
+        width: 100%;
+        background-color: #666;
+    }
+    .proj3::before{
         display: block;
         content: '';
         height: 1px;

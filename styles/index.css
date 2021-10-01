@@ -284,12 +284,12 @@ main img {
   margin: 100px 0px;
 }
 
-.projetos .proj1 h3, .projetos .proj2 h3 {
+.projetos .proj1 h3, .projetos .proj2 h3, .projetos .proj3 h3 {
   -webkit-text-decoration-color: #FFF;
           text-decoration-color: #FFF;
 }
 
-.projetos .proj1 h3:hover, .projetos .proj2 h3:hover {
+.projetos .proj1 h3:hover, .projetos .proj2 h3:hover, .projetos .proj3 h3:hover {
   text-decoration: underline;
   -webkit-text-decoration-color: #9E452A;
           text-decoration-color: #9E452A;
@@ -297,15 +297,15 @@ main img {
   transition: 0.6s;
 }
 
-.projetos .proj1, .projetos .proj2 {
+.projetos .proj1, .projetos .proj2, .projetos .proj3 {
   margin: 0px 27px;
 }
 
-.projetos .proj1 h2, .projetos .proj2 h2 {
+.projetos .proj1 h2, .projetos .proj2 h2, .projetos .proj3 h2 {
   margin: 50px 0px 55px;
 }
 
-.projetos .proj1 p, .projetos .proj2 p {
+.projetos .proj1 p, .projetos .proj2 p, .projetos .proj3 p {
   margin: 23px 0px 48px;
 }
 
@@ -320,6 +320,14 @@ main img {
 }
 
 .projetos .proj2::before {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: #666;
+}
+
+.projetos .proj3::before {
   display: block;
   content: '';
   height: 1px;

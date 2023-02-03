@@ -48,14 +48,23 @@ body{
     ul{
         display: flex;
         align-items: center;
+        // gap: 12px;
 
         list-style-type: none;
         height: 75px;
 
         li{
-            width: 50px;
-            height: 50px;
-            margin: 0 6px 0 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 60px;
+            height: 60px;
+            transition: 0.2s;
+            &:hover{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
         }
         li:first-child{
             margin-left: 13px;
@@ -68,5 +77,6 @@ body{
 }
 
 .navbar-icon{
-    width: 50px;
+    width: 60px;
+    transition: 0.2s;
 }

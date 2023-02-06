@@ -1,11 +1,12 @@
 function moveWindow(name, header, divX, divY){
     this.name = name,
     this.header = header,
-    this.divX = divX,
-    this.divY = divY,
+    this.divX = divX, //divX is the start value of div on screen from left
+    this.divY = divY, //divY is the start value of div on screen from top
     this.isDragging = false,
     header.addEventListener('mousedown', dragOn.bind(this)),
     header.addEventListener('mouseup', dragOff.bind(this)),
+    header.addEventListener('mouseout', mouseOut.bind(this)),
     header.addEventListener('mousemove', move.bind(this))
     
     function dragOn(e){
@@ -22,6 +23,10 @@ function moveWindow(name, header, divX, divY){
         this.isDragging = false
     }
     
+    function mouseOut(){
+        this.isDragging = false
+    }
+
     function move(e){
         if(this.isDragging){
             this.name.style.left = `${e.clientX - (mouseStartX - this.divX)}px`

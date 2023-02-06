@@ -1,5 +1,4 @@
 let icons = document.querySelectorAll('.navbar-icon')
-console.log(icons)
 icons.forEach((item, index) => {
     item.addEventListener('mouseover', (e) => focus(e.target, index))
     item.addEventListener('mouseleave', (e) => (

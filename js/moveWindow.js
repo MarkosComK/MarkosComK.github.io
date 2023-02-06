@@ -1,41 +1,39 @@
-function moveWindow(name, header, obj){
+function moveWindow(name, header, divX, divY){
     this.name = name,
     this.header = header,
-    this.divX = 50,
-    this.divY = 50,
+    this.divX = divX,
+    this.divY = divY,
     this.isDragging = false,
-    header.addEventListener('mousedown', (e, name) => {dragOn(e, obj)}),
-    header.addEventListener('mouseup', (e, name) => {dragOff(e, obj)}),
-    header.addEventListener('mousemove', move)
+    header.addEventListener('mousedown', dragOn.bind(this)),
+    header.addEventListener('mouseup', dragOff.bind(this)),
+    header.addEventListener('mousemove', move.bind(this))
     
+    function dragOn(e){
+        mouseStartX = e.clientX
+        mouseStartY = e.clientY
+        this.isDragging = true
+    }
+    
+    function dragOff(e){
+        mouseEndX = e.clientX
+        mouseEndY = e.clientY
+        this.divX += mouseEndX - mouseStartX
+        this.divY += mouseEndY - mouseStartY
+        this.isDragging = false
+    }
+    
+    function move(e){
+        if(this.isDragging){
+            this.name.style.left = `${e.clientX - (mouseStartX - this.divX)}px`
+            this.name.style.top = `${e.clientY - (mouseStartY - this.divY)}px`
+        }
+    }
 }
 
 var mouseEndX
 var mouseEndY
 var mouseStartX
 var mouseStartY
-var calculator = new moveWindow(document.querySelector('.calculator'), document.querySelector('.calculator-header'))
 
-
-function dragOn(e, name){
-    mouseStartX = e.clientX
-    mouseStartY = e.clientY
-    name.isDragging = true
-    console.log(name)
-}
-
-function dragOff(e){
-    mouseEndX = e.clientX
-    mouseEndY = e.clientY
-    calculator.divX += mouseEndX - mouseStartX
-    calculator.divY += mouseEndY - mouseStartY
-    calculator.isDragging = false
-    // console.log(name)
-}
-
-function move(e){
-    if(calculator.isDragging){
-        calculator.name.style.left = `${e.clientX - (mouseStartX - calculator.divX)}px`
-        calculator.name.style.top = `${e.clientY - (mouseStartY - calculator.divY)}px`
-    }
-}
+var calculator = new moveWindow(document.querySelector('.calculator'), document.querySelector('.calculator-header'), 50, 50)
+var pomodoro = new moveWindow(document.querySelector('.pomodoro'), document.querySelector('.pomodoro-header'), 450, 50)

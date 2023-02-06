@@ -6,32 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio pessoal de Markos Vinicius">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="styles/window.css">
     <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
     <title>Portfólio</title>
 </head>
 <body>
     <div class="body-wrap">
+        <div class="video-bg">
+            <video width="320" height="240" autoplay loop muted>
+             <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+           </video>
+        </div>
         <header>
             <nav class="top-nav">
-                <ul class="glass-effect">content</ul>
-                <ul class="glass-effect">content</ul>
+                <ul class="glass-effect">
+                    <li><img src="imagens/favicon.png" alt="" id="icon-top-left"></li>
+                    <li>Find</li>
+                    <li>Settings</li>
+                </ul>
+                <ul class="glass-effect">
+                    <li><img src="assets/icons/wifi-icon.png" alt="" title="Wi-fi" style="margin-top: 3px;"></li>
+                    <li><img src="assets/icons/battery-icon.png" alt="battery IMG" title="100%" style="margin-top: 3px;"></li>
+                    <li class="clock"></li>
+                </ul>
             </nav>
         </header>
         <main>
-            content
+            <div class="calculator">
+                <div class="calculator-header"></div>
+            </div>
+            
         </main>
         <nav class="bottom-nav glass-effect">
             <ul>
                 <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
+                <li class="list-item"><img class="navbar-icon" src="assets/icons/camera-icon.png" alt=""></li>
+                <li class="list-item"><img class="navbar-icon" src="assets/icons/terminal-icon.png" alt=""></li>
+                <li class="list-item"><img class="navbar-icon" src="assets/icons/clock-icon.png" alt=""></li>
+                <li class="list-item"><img class="navbar-icon" src="assets/icons/calculator-icon.png" alt=""></li>
+                <li class="list-item"><img class="navbar-icon" src="assets/icons/mail-icon.png" alt=""></li>
+                <li class="list-item"><img class="navbar-icon" src="assets/icons/games-icon.png" alt=""></li>
             </ul>
         </nav>
     </div>
     <script src="js/navbarAnimation.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/moveWindow.js"></script>
 </body>
 </html>

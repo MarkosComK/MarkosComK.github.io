@@ -7,6 +7,7 @@
     <meta name="description" content="Portfólio pessoal de Markos Vinicius">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="styles/window.css">
+    <link rel="stylesheet" href="styles/calculator.css">
     <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
     <title>Portfólio</title>
 </head>
@@ -34,7 +35,38 @@
         </header>
         <main>
             <div class="calculator" id="calculator">
-                <div class="calculator-header" id="calculator"></div>
+                <div class="calculator-header" id="calculator">
+                    <header>
+                        <button class="circle red"></button>
+                        <button class="circle yellow"></button>
+                        <button class="circle green"></button>
+                    </header>
+                </div>
+                <section class="calculus">
+                    <p class="result">0</p>
+                </section>
+                <section class="buttons">
+                        <button data-delete class="square dark">AC</button>
+                        <button data-sign class="square dark">±</button>
+                        <button data-percent class="square dark">％</button>
+                        <button data-opt="/" class="square yellow">÷</button>
+                        <button data-number="7" class="square">7</button>
+                        <button data-number="8" class="square">8</button>
+                        <button data-number="9" class="square">9</button>
+                        <button data-opt="*" class="square yellow">×</button>
+                        <button data-number="4" class="square">4</button>
+                        <button data-number="5" class="square">5</button>
+                        <button data-number="6" class="square">6</button>
+                        <button data-opt="-" class="square yellow">−</button>
+                        <button data-number="1" class="square">1</button>
+                        <button data-number="2" class="square">2</button>
+                        <button data-number="3" class="square">3</button>
+                        <button data-opt="+" class="square yellow">+</button>
+                        <button data-number="0" class="square spand">0</button>
+                        <button data-decimal class="square">,</button>
+                        <button data-equal class="square yellow bright">＝</button>
+                    </div>
+                </section>
             </div>
             <div class="pomodoro" id="pomodoro" style="display: none;">
                 <div class="pomodoro-header" id="pomodoro"></div>
@@ -54,6 +86,7 @@
         </nav>
     </div>
     <script src="js/navbarAnimation.js"></script>
+    <script src="js/calculator.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/moveWindow.js"></script>
     <script src="js/hideShowWindow.js"></script>

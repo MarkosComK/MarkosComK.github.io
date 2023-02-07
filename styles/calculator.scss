@@ -97,6 +97,10 @@
     border-radius: 0 0 14px 14px;
 }
 
+.buttons .square:hover{
+    filter: brightness(110%);
+}
+
 .square{
     background-color: #626065;
 }

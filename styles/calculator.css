@@ -105,6 +105,13 @@
   line-height: 0.5;
 }
 
+.calculus .operation {
+  padding-right: 0.5rem;
+  padding-top: 16px;
+  text-align: right;
+  font-size: 1.2rem;
+}
+
 .buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;

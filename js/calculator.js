@@ -1,34 +1,44 @@
-const items = document.querySelectorAll('.square')
+const items = document.querySelectorAll('#number')
+const sumBtn = document.querySelector('#sum')
+const equalBtn = document.querySelector('#equal')
 
 console.log(items[4].dataset.number)
 
 var firstValue = []
 var opt = []
 var secondValue = []
-var result = ['ola mundo']
+var result = []
 
 
 var operationPress = false
 
-items.forEach((item, pos) => {
+items.forEach((item) => {
     item.addEventListener('click', () => {
-        if (item.dataset.number == undefined){
-            opt.push(item.dataset.opt)
-            if(opt.length > 0){
-                operationPress = true
-            }
+        if(opt.length > 0){
+            secondValue.push(Number(item.dataset.number))
         } else {
-            if(operationPress){
-                secondValue.push(item.dataset.number)
-            } else {
-                firstValue.push(item.dataset.number)
-            }
-        }   
-        var firstValueStr = Number(firstValue.join(''))
-        console.log(firstValueStr)
-        console.log(opt)
+            firstValue.push(Number(item.dataset.number))
+        }
     })
 })
+
+sumBtn.addEventListener('click', () => {
+    opt = sumBtn.dataset.opt
+    console.log(opt)
+})
+
+equalBtn.addEventListener('click', () => {
+    firstValue = Number(firstValue.join(''))
+    secondValue = Number(secondValue.join(''))
+    if(opt == '+'){
+        result = sum(firstValue, secondValue)
+    }
+    operationPress = true
+    if(operationPress){
+        console.log(result)
+    }
+})
+
 
 
 function sum(n1, n2){

@@ -2,6 +2,9 @@ const items = document.querySelectorAll('#number')
 const sumBtn = document.querySelector('#sum')
 const subBtn = document.querySelector('#sub')
 const multiplyBtn = document.querySelector('#mult')
+const percentBtn = document.querySelector('#percent')
+const divideBtn = document.querySelector('#divide')
+const decimalBtn = document.querySelector('#decimal')
 const equalBtn = document.querySelector('#equal')
 const clearBtn = document.querySelector('#clear')
 
@@ -15,7 +18,7 @@ var firstValue = []
 var opt = []
 var secondValue = []
 var result = []
-
+var percent = false
 
 var operationPress = false
 // Add listener to each number button
@@ -56,6 +59,27 @@ multiplyBtn.addEventListener('click', () => {
     }
 })
 
+divideBtn.addEventListener('click', () => {
+    if(firstValue.length > 0){
+        opt = divideBtn.dataset.opt
+        operationScreen.innerText = opt
+    }
+})
+
+percentBtn.addEventListener('click', () => {
+    if(firstValue.length > 0){
+        secondValue = [firstValue.join('')*secondValue.join('')/100]
+        operationScreen.innerText = '%'
+    }
+})
+
+decimalBtn.addEventListener('click', () => {
+    if(firstValue.length > 0){
+        firstValue.push('.')
+    }
+})
+
+
 
 // equal button
 equalBtn.addEventListener('click', () => {
@@ -70,10 +94,14 @@ equalBtn.addEventListener('click', () => {
     if(opt == 'x'){
         result = multiply(firstValue, secondValue)
     }
+    if(opt == '÷'){
+        result = divide(firstValue, secondValue)
+    }
     operationPress = true
     if(operationPress){
         screen.innerText = result
     }
+    operationScreen.innerText = '='
     firstValue = [result]
     secondValue = []
 })
@@ -101,4 +129,8 @@ function sub(n1, n2){
 
 function multiply(n1, n2){
     return n1 * n2
+}
+
+function divide(n1, n2){
+    return n1 / n2
 }

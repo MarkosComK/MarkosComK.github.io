@@ -138,6 +138,11 @@
   border-radius: 0 0 0 14px;
 }
 
+.ac {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 .bright {
   border-radius: 0 0 14px 0;
 }/*# sourceMappingURL=calculator.css.map */

@@ -85,17 +85,21 @@ decimalBtn.addEventListener('click', () => {
 equalBtn.addEventListener('click', () => {
     firstValue = Number(firstValue.join(''))
     secondValue = Number(secondValue.join(''))
-    if(opt == '+'){
-        result = sum(firstValue, secondValue)
-    }
-    if(opt == '-'){
-        result = sub(firstValue, secondValue)
-    }
-    if(opt == 'x'){
-        result = multiply(firstValue, secondValue)
-    }
-    if(opt == '÷'){
-        result = divide(firstValue, secondValue)
+    switch (opt) {
+        case '+':
+            result = sum(firstValue, secondValue);
+            break;
+        case '-':
+            result = sub(firstValue, secondValue);
+            break;
+        case 'x':
+            result = multiply(firstValue, secondValue);
+            break;
+        case '÷':
+            result = divide(firstValue, secondValue);
+            break;
+        default:
+            break;
     }
     operationPress = true
     if(operationPress){

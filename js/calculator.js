@@ -77,6 +77,9 @@ decimalBtn.addEventListener('click', () => {
     if(firstValue.length > 0){
         firstValue.push('.')
     }
+    if(secondValue.length > 0){
+        secondValue.push('.')
+    }
 })
 
 

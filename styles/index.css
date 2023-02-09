@@ -131,13 +131,6 @@ body {
   margin: 0 5px;
 }
 
-.menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 10px;
-}
-
 .menu-icon {
   width: 24px;
 }

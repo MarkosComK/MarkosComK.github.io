@@ -78,7 +78,7 @@ body{
 }
 // hide the dropdown content
 .dropdown-content {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -126,6 +126,23 @@ body{
 
 .menu-icon{
     width: 24px;
+}
+
+.items-div{
+    height: 100%;
+    .menu-item{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        margin-left: 5px;
+
+        width: 100%;
+        height: 33.3%;
+        p{
+            font-size: 12px;
+        }
+    }
 }
 
 .show{

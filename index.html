@@ -7,6 +7,7 @@
     <meta name="description" content="Portfólio pessoal de Markos Vinicius">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="styles/window.css">
+    <link rel="stylesheet" href="styles/finder.css">
     <link rel="stylesheet" href="styles/calculator.css">
     <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
     <title>Portfólio</title>
@@ -31,7 +32,7 @@
                         <div class="dropdown-content glass-effect">
                             <div class="dropdown-flex">
                                 <div class="dropdown-item glass-effect">
-                                    <div style="height: 100%;">
+                                    <div class="items-div">
                                         <div class="menu-item">
                                             <a href=""><img class="menu-icon" src="assets/icons/github-icon.png" alt=""></a>
                                             <div>
@@ -56,12 +57,12 @@
                                     </div>
                                 </div>
                                 <div class="dropdown-item glass-effect">
-                                    <a href="">example 2</a>
+                                    <a href=""></a>
                                 </div>
                             </div>
                             <div class="dropdown-flex">
                                 <div class="dropdown-item2 glass-effect" >
-                                    <a href="">example 3</a>
+                                    <a href=""></a>
                                 </div>
                             </div>
                         </div>
@@ -72,6 +73,55 @@
             </nav>
         </header>
         <main>
+            <!-- finder app -->
+            <div class="finder" id="finder">
+                <section>
+                    <div class="finder-sidebar">
+                        <div class="finder-buttons">
+                            <button class="circle red"></button>
+                            <button class="circle yellow"></button>
+                            <button class="circle green"></button>
+                        </div>
+                        <div>
+                            <div class="favorites">
+                                <header>
+                                    <p>Favorites</p>
+                                </header>
+                                <ul class="remove-bullets">
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/application.png" alt="">Apps</li>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/recent.png" alt="">Recent</li>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/airdrop.png" alt="">AirDrop</li>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/desktop.png" alt="">Desktop</li>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/documents.png" alt="">Documents</li>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/downloads.png" alt="">Downloads</li>
+                                </ul>
+                            </div>
+                            <div class="drive">
+                                <ul class="remove-bullets">
+                                    <header>
+                                        <p>Drive</p>
+                                    </header>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/drive.png" alt="">icloud</li>
+                                </ul>
+                            </div>
+                            <div class="tags">
+                                <header>
+                                    <p>Tags</p>
+                                </header>
+                                <ul class="remove-bullets">
+                                    <li class="finder-sidebar-item">Blue Tag</li>
+                                    <li class="finder-sidebar-item">Orange Tag</li>
+                                    <li class="finder-sidebar-item">Green Tag</li>
+                                    <li class="finder-sidebar-item">Purple Tag</li>
+                                    <li class="finder-sidebar-item">Teal Tag</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="finder-main"></div>
+                </section>
+            </div>
+            <!-- calculator app -->
             <div class="calculator" id="calculator">
                 <div class="calculator-header" id="calculator">
                     <header>
@@ -109,12 +159,12 @@
             <div class="pomodoro" id="pomodoro" style="display: none;">
                 <div class="pomodoro-header" id="pomodoro"></div>
             </div>
-            
+            <!--  -->
         </main>
         <nav class="bottom-nav glass-effect">
             <ul>
+                <li class="list-item"><img class="navbar-icon" src="assets/icons/finder-icon.png" alt=""></li>
                 <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/camera-icon.png" alt=""></li>
                 <li class="list-item"><img class="navbar-icon" src="assets/icons/terminal-icon.png" alt=""></li>
                 <li class="list-item"><img class="navbar-icon" src="assets/icons/clock-icon.png" alt=""></li>
                 <li class="list-item"><img class="navbar-icon" id="calculatorBtn" src="assets/icons/calculator-icon.png" alt=""></li>

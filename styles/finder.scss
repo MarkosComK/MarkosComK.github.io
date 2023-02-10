@@ -1,0 +1,66 @@
+
+
+.finder{
+    display: flex;
+
+    position: absolute;
+    border: 1px solid rgb(54, 54, 54);
+    width: 800px;
+    height: 500px;
+
+    left: 600px;
+    top: 50px;
+
+    background: #1E1E1E;
+    border-radius: 10px;
+}
+.finder-sidebar{
+    width: 150px;
+    height: 100%;
+    background: rgba(50, 50, 50, 0.95);
+    backdrop-filter: blur(48px);
+    border-radius: 10px 0px 0px 10px;
+
+    border: 1px solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finder-buttons{
+    height: 46px;
+    border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.favorites{
+    height: 185px;
+    // border: 1px solid red;
+    header{
+        height: 13px;
+    }
+}
+
+.finder-sidebar-item{
+    height: 28px;
+}
+
+.drive{
+    height: 45px;
+    header{
+        height: 13px;
+    }
+}
+.tags{
+    height: 157px;
+    header{
+        height: 13px;
+    }
+}
+.remove-bullets{
+    list-style-type: none;
+}

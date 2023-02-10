@@ -13,14 +13,14 @@ function moveWindow(name, header, divX, divY){
         mouseStartX = e.clientX
         mouseStartY = e.clientY
         this.isDragging = true
-        windows.forEach((item, index) => {
-            console.log(windows[index].name)
-            if (windows[index].name.classList.contains('window-index')) {
-                    windows[index].name.classList.remove('window-index');
-                } else {
-                    windows[index].name.classList.add('window-index')
-                }
-        })
+        // windows.forEach((item, index) => {
+        //     console.log(windows[index].name)
+        //     if (windows[index].name.classList.contains('window-index')) {
+        //             windows[index].name.classList.remove('window-index');
+        //         } else {
+        //             windows[index].name.classList.add('window-index')
+        //         }
+        // })
     }
     
     function dragOff(e){

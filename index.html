@@ -75,17 +75,18 @@
         <main>
             <!-- finder app -->
             <div class="finder" id="finder">
+                <header class="finder-header"></header>
                 <section>
                     <div class="finder-sidebar">
                         <div class="finder-buttons">
-                            <button class="circle red"></button>
+                            <button class="circle red close-finder"></button>
                             <button class="circle yellow"></button>
                             <button class="circle green"></button>
                         </div>
                         <div>
                             <div class="favorites">
                                 <header>
-                                    <p>Favorites</p>
+                                    <p class="font-change">Favorites</p>
                                 </header>
                                 <ul class="remove-bullets">
                                     <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/application.png" alt="">Apps</li>
@@ -99,14 +100,14 @@
                             <div class="drive">
                                 <ul class="remove-bullets">
                                     <header>
-                                        <p>Drive</p>
+                                        <p class="font-change">Drive</p>
                                     </header>
                                     <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/drive.png" alt="">icloud</li>
                                 </ul>
                             </div>
                             <div class="tags">
                                 <header>
-                                    <p>Tags</p>
+                                    <p class="font-change">Tags</p>
                                 </header>
                                 <ul class="remove-bullets">
                                     <li class="finder-sidebar-item">Blue Tag</li>
@@ -163,7 +164,7 @@
         </main>
         <nav class="bottom-nav glass-effect">
             <ul>
-                <li class="list-item"><img class="navbar-icon" src="assets/icons/finder-icon.png" alt=""></li>
+                <li class="list-item"><img class="navbar-icon" id="finderBtn" src="assets/icons/finder-icon.png" alt=""></li>
                 <li class="list-item"><img class="navbar-icon" src="assets/icons/safari-icon.png" alt=""></li>
                 <li class="list-item"><img class="navbar-icon" src="assets/icons/terminal-icon.png" alt=""></li>
                 <li class="list-item"><img class="navbar-icon" src="assets/icons/clock-icon.png" alt=""></li>

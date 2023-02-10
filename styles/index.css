@@ -33,8 +33,13 @@ button, input[type=submit], input[type=reset] {
   outline: inherit;
 }
 
+.window-index {
+  z-index: 10;
+}
+
 html {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body {

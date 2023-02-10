@@ -10,14 +10,21 @@
   border-radius: 10px;
 }
 
+.finder-header {
+  position: absolute;
+  width: 650px;
+  left: 150px;
+  height: 49px;
+  z-index: 1;
+}
+
 .finder-sidebar {
   width: 150px;
-  height: 100%;
+  height: 498px;
   background: rgba(50, 50, 50, 0.95);
   -webkit-backdrop-filter: blur(48px);
           backdrop-filter: blur(48px);
   border-radius: 10px 0px 0px 10px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,21 +32,41 @@
 
 .finder-buttons {
   height: 46px;
-  border: 1px solid red;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
+  position: relative;
+  left: 1px;
 }
 
 .favorites {
-  height: 185px;
+  width: 118px;
+  height: 183px;
 }
 .favorites header {
   height: 13px;
 }
 
+.font-change {
+  font-size: 11px;
+  color: #888888;
+}
+
 .finder-sidebar-item {
+  display: flex;
+  align-items: center;
   height: 28px;
+  border-radius: 7px;
+  background-color: rgba(50, 50, 50, 0.95);
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+.finder-sidebar-item:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+}
+.finder-sidebar-item img {
+  margin: 8px 6px 6px 6px;
 }
 
 .drive {

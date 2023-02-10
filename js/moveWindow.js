@@ -13,6 +13,14 @@ function moveWindow(name, header, divX, divY){
         mouseStartX = e.clientX
         mouseStartY = e.clientY
         this.isDragging = true
+        windows.forEach((item, index) => {
+            console.log(windows[index].name)
+            if (windows[index].name.classList.contains('window-index')) {
+                    windows[index].name.classList.remove('window-index');
+                } else {
+                    windows[index].name.classList.add('window-index')
+                }
+        })
     }
     
     function dragOff(e){
@@ -42,3 +50,19 @@ var mouseStartY
 
 var calculator = new moveWindow(document.querySelector('.calculator'), document.querySelector('.calculator-header'), 50, 50)
 var pomodoro = new moveWindow(document.querySelector('.pomodoro'), document.querySelector('.pomodoro-header'), 450, 50)
+var finder = new moveWindow(document.querySelector('.finder'), document.querySelector('.finder-header'), 600, 50)
+
+const windows = [
+    calculator,
+    pomodoro,
+    finder
+]
+
+// windows.forEach((e) => {
+//     console.log(e)
+//     if (e.name.classList.contains('window-index')) {
+//         e.name.classList.remove('window-index');
+//     } else {
+//         e.name.classList.add('window-index')
+//     }
+// })

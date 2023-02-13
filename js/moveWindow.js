@@ -14,12 +14,16 @@ function moveWindow(name, header, divX, divY){
         mouseStartX = e.clientX
         mouseStartY = e.clientY
         this.isDragging = true
+        // both codes make only the cliced obj receive the true on  obj.focus so the z-index only became effective on that obj
+        // make all the obj.focus receive false
         for(let c = 0; c < windows.length; c++){
             windows[c].focus = false
         }
+        // make the clicked obj.focus receive true
         let objFocus = testing(windows, this)[0]
         objFocus.focus = true
         console.log(objFocus)
+        // add code below to put z index on the obj with the obj.focus: true
     }
     
     function dragOff(e){

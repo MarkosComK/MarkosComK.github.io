@@ -4,6 +4,7 @@ function moveWindow(name, header, divX, divY){
     this.divX = divX, //divX is the start value of div on screen from left
     this.divY = divY, //divY is the start value of div on screen from top
     this.isDragging = false,
+    this.focus = false
     header.addEventListener('mousedown', dragOn.bind(this)),
     header.addEventListener('mouseup', dragOff.bind(this)),
     header.addEventListener('mouseout', mouseOut.bind(this)),
@@ -13,14 +14,9 @@ function moveWindow(name, header, divX, divY){
         mouseStartX = e.clientX
         mouseStartY = e.clientY
         this.isDragging = true
-        // windows.forEach((item, index) => {
-        //     console.log(windows[index].name)
-        //     if (windows[index].name.classList.contains('window-index')) {
-        //             windows[index].name.classList.remove('window-index');
-        //         } else {
-        //             windows[index].name.classList.add('window-index')
-        //         }
-        // })
+        this.focus = true
+        console.log(this.name.className)
+        testing(windows, this.name.className)
     }
     
     function dragOff(e){
@@ -53,16 +49,15 @@ var pomodoro = new moveWindow(document.querySelector('.pomodoro'), document.quer
 var finder = new moveWindow(document.querySelector('.finder'), document.querySelector('.finder-header'), 600, 50)
 
 const windows = [
-    calculator,
-    pomodoro,
-    finder
+    calculator.name.className,
+    // pomodoro.name.className,
+    finder.name.className
 ]
 
-// windows.forEach((e) => {
-//     console.log(e)
-//     if (e.name.classList.contains('window-index')) {
-//         e.name.classList.remove('window-index');
-//     } else {
-//         e.name.classList.add('window-index')
-//     }
-// })
+function testing(array, item){
+    var index = array.indexOf(item);
+    if (index !== -1) {
+    var newArr = array.splice(index, 1);
+    }
+    return console.log(array)
+}

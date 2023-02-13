@@ -14,9 +14,9 @@ function moveWindow(name, header, divX, divY){
         mouseStartX = e.clientX
         mouseStartY = e.clientY
         this.isDragging = true
-        this.focus = true
-        console.log(this.name.className)
-        testing(windows, this.name.className)
+        let objFocus = testing(windows, this)[0]
+        objFocus.focus = true
+        console.log(objFocus)
     }
     
     function dragOff(e){
@@ -49,15 +49,13 @@ var pomodoro = new moveWindow(document.querySelector('.pomodoro'), document.quer
 var finder = new moveWindow(document.querySelector('.finder'), document.querySelector('.finder-header'), 600, 50)
 
 const windows = [
-    calculator.name.className,
-    // pomodoro.name.className,
-    finder.name.className
+    calculator,
+    pomodoro,
+    finder
 ]
 
 function testing(array, item){
-    var index = array.indexOf(item);
-    if (index !== -1) {
-    var newArr = array.splice(index, 1);
-    }
-    return console.log(array)
+    let index = array.indexOf(item)
+    let arrCopy = [...array].splice(index, 1)
+    return arrCopy
 }

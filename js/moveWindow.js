@@ -14,6 +14,9 @@ function moveWindow(name, header, divX, divY){
         mouseStartX = e.clientX
         mouseStartY = e.clientY
         this.isDragging = true
+        for(let c = 0; c < windows.length; c++){
+            windows[c].focus = false
+        }
         let objFocus = testing(windows, this)[0]
         objFocus.focus = true
         console.log(objFocus)
@@ -56,6 +59,7 @@ const windows = [
 
 function testing(array, item){
     let index = array.indexOf(item)
-    let arrCopy = [...array].splice(index, 1)
+    let arrCopy = [...array]
+    arrCopy = arrCopy.splice(index, 1)
     return arrCopy
 }

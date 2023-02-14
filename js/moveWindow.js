@@ -9,30 +9,15 @@ function moveWindow(name, header, divX, divY){
     header.addEventListener('mouseup', dragOff.bind(this)),
     header.addEventListener('mouseout', mouseOut.bind(this)),
     header.addEventListener('mousemove', move.bind(this))
-    
+    name.addEventListener('click', focus.bind(this))
     function dragOn(e){
         mouseStartX = e.clientX
         mouseStartY = e.clientY
         this.isDragging = true
-        // both codes make only the cliced obj receive the true on  obj.focus so the z-index only became effective on that obj
-        // make all the obj.focus receive false
-        for(let c = 0; c < windows.length; c++){
-            windows[c].focus = false
-        }
-        // make the clicked obj.focus receive true
-        let objFocus = testing(windows, this)[0]
-        objFocus.focus = true
-        console.log(objFocus)
-        // add code below to put z index on the obj with the obj.focus: true
-        for(let c = 0; c < windows.length; c++){
-            if(windows[c].focus){
-                windows[c].name.style.zIndex = 1
-            } else {
-                windows[c].name.style.zIndex = 0
-            }
-        }
+        setFocus(this)
     }
     
+
     function dragOff(e){
         mouseEndX = e.clientX
         mouseEndY = e.clientY
@@ -51,6 +36,30 @@ function moveWindow(name, header, divX, divY){
             this.name.style.top = `${e.clientY - (mouseStartY - this.divY)}px`
         }
     }
+
+    function focus(e){
+        setFocus(this)
+    }
+
+    function setFocus(e){
+        // both codes make only the cliced obj receive the true on  obj.focus so the z-index only became effective on that obj
+        // make all the obj.focus receive false
+        for(let c = 0; c < windows.length; c++){
+            windows[c].focus = false
+        }
+        // make the clicked obj.focus receive true
+        var objFocus = testing(windows, e)[0]
+        objFocus.focus = true
+        //code below put z index on the obj with the obj.focus: true
+        for(let c = 0; c < windows.length; c++){
+            if(windows[c].focus){
+                windows[c].name.style.zIndex = 1
+            } else {
+                windows[c].name.style.zIndex = 0
+            }
+        }
+    }
+
 }
 
 var mouseEndX

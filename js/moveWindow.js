@@ -24,6 +24,13 @@ function moveWindow(name, header, divX, divY){
         objFocus.focus = true
         console.log(objFocus)
         // add code below to put z index on the obj with the obj.focus: true
+        for(let c = 0; c < windows.length; c++){
+            if(windows[c].focus){
+                windows[c].name.style.zIndex = 1
+            } else {
+                windows[c].name.style.zIndex = 0
+            }
+        }
     }
     
     function dragOff(e){

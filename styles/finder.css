@@ -1,5 +1,5 @@
 .finder {
-  display: flex;
+  display: none;
   position: absolute;
   border: 1px solid rgb(54, 54, 54);
   width: 800px;

@@ -75,7 +75,16 @@
         <main>
             <!-- finder app -->
             <div class="finder" id="finder">
-                <header class="finder-header"></header>
+                <header class="finder-header">
+                    <div>
+                        <img class="arrow" src="assets/icons/finder-icons/left-arrow.png" alt="">
+                        <img class="arrow" src="assets/icons/finder-icons/right-arrow.png" alt="">
+                    </div>
+                    <p>About</p>
+                    <div>
+                        <img class="search" src="assets/icons/finder-icons/search.png" alt="">
+                    </div>
+                </header>
                 <section>
                     <div class="finder-sidebar">
                         <div class="finder-buttons">
@@ -89,8 +98,8 @@
                                     <p class="font-change">Favorites</p>
                                 </header>
                                 <ul class="remove-bullets">
-                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/application.png" alt="">Apps</li>
-                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/recent.png" alt="">Recent</li>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/application.png" alt="">About</li>
+                                    <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/recent.png" alt="">Work</li>
                                     <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/airdrop.png" alt="">AirDrop</li>
                                     <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/desktop.png" alt="">Desktop</li>
                                     <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/documents.png" alt="">Documents</li>
@@ -122,62 +131,67 @@
                     <div class="finder-main"></div>
                 </section>
                 <main class="finder-main scrollbar" id="style-1">
-                    <h1>Hello, my name is Markos and i am a front-end developer.</h1>
-                    <div class="profile-wrap">
-                        <img src="./imagens/me-art.JPG" alt="">
-                        <div>
-                            <p><strong>Markos Vinicius</strong></p>
-                            <p>Web-developer from Brazil, based in Portugal</p>
+                    <section class="about">
+                        <h1>Hello, my name is Markos and i am a front-end developer.</h1>
+                        <div class="profile-wrap">
+                            <img src="./imagens/me-art.JPG" alt="">
+                            <div>
+                                <p><strong>Markos Vinicius</strong></p>
+                                <p>Web-developer from Brazil, based in Portugal</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="text-wrap">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus est et
-                    sem aliquet, sit amet vulputate ante auctor. Aenean eleifend enim vitae purus 
-                    mollis, et suscipit eros elementum. Duis ornare, eros in ullamcorper sollicitudin, 
-                    dolor lorem accumsan tellus, at pellentesque quam est vitae libero.
-                    </p>
-                    <p>
-                        Proin ultricies neque in ante pellentesque luctus. Vestibulum venenatis mi vel 
-                        orci vulputate, vel faucibus tortor pharetra. Vivamus hendrerit libero vel eros 
-                        tempor, a posuere massa mollis. Morbi facilisis mauris ut lacus ullamcorper 
-                        consequat.
-                    </p>
-                    <p>
-                        Donec venenatis augue ut magna suscipit, non suscipit arcu tristique. Phasellus 
-                        vel diam et enim interdum iaculis. Sed tempor, eros vel suscipit fringilla, nunc 
-                        nibh euismod orci, sed varius ante leo ut lorem. Fusce nec posuere mi
-                    </p>
-                    <p>
-                        Pellentesque facilisis, lectus quis pulvinar pretium, metus orci euismod lacus, 
-                        sed volutpat magna nisl at odio. Fusce aliquet laoreet felis eget commodo. Sed 
-                        pharetra odio id leo mollis, a congue lorem vehicula. Nunc ut dui eu leo 
-                        tristique commodo sit amet vel velit.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus est et
-                    sem aliquet, sit amet vulputate ante auctor. Aenean eleifend enim vitae purus 
-                    mollis, et suscipit eros elementum. Duis ornare, eros in ullamcorper sollicitudin, 
-                    dolor lorem accumsan tellus, at pellentesque quam est vitae libero.
-                    </p>
-                    <p>
-                        Proin ultricies neque in ante pellentesque luctus. Vestibulum venenatis mi vel 
-                        orci vulputate, vel faucibus tortor pharetra. Vivamus hendrerit libero vel eros 
-                        tempor, a posuere massa mollis. Morbi facilisis mauris ut lacus ullamcorper 
-                        consequat.
-                    </p>
-                    <p>
-                        Donec venenatis augue ut magna suscipit, non suscipit arcu tristique. Phasellus 
-                        vel diam et enim interdum iaculis. Sed tempor, eros vel suscipit fringilla, nunc 
-                        nibh euismod orci, sed varius ante leo ut lorem. Fusce nec posuere mi
-                    </p>
-                    <p>
-                        Pellentesque facilisis, lectus quis pulvinar pretium, metus orci euismod lacus, 
-                        sed volutpat magna nisl at odio. Fusce aliquet laoreet felis eget commodo. Sed 
-                        pharetra odio id leo mollis, a congue lorem vehicula. Nunc ut dui eu leo 
-                        tristique commodo sit amet vel velit.
-                    </p>
-                    </div>
+                        <div class="text-wrap">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus est et
+                            sem aliquet, sit amet vulputate ante auctor. Aenean eleifend enim vitae purus 
+                            mollis, et suscipit eros elementum. Duis ornare, eros in ullamcorper sollicitudin, 
+                            dolor lorem accumsan tellus, at pellentesque quam est vitae libero.
+                            </p>
+                            <p>
+                                Proin ultricies neque in ante pellentesque luctus. Vestibulum venenatis mi vel 
+                                orci vulputate, vel faucibus tortor pharetra. Vivamus hendrerit libero vel eros 
+                                tempor, a posuere massa mollis. Morbi facilisis mauris ut lacus ullamcorper 
+                                consequat.
+                            </p>
+                            <p>
+                                Donec venenatis augue ut magna suscipit, non suscipit arcu tristique. Phasellus 
+                                vel diam et enim interdum iaculis. Sed tempor, eros vel suscipit fringilla, nunc 
+                                nibh euismod orci, sed varius ante leo ut lorem. Fusce nec posuere mi
+                            </p>
+                            <p>
+                                Pellentesque facilisis, lectus quis pulvinar pretium, metus orci euismod lacus, 
+                                sed volutpat magna nisl at odio. Fusce aliquet laoreet felis eget commodo. Sed 
+                                pharetra odio id leo mollis, a congue lorem vehicula. Nunc ut dui eu leo 
+                                tristique commodo sit amet vel velit.
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus est et
+                            sem aliquet, sit amet vulputate ante auctor. Aenean eleifend enim vitae purus 
+                            mollis, et suscipit eros elementum. Duis ornare, eros in ullamcorper sollicitudin, 
+                            dolor lorem accumsan tellus, at pellentesque quam est vitae libero.
+                            </p>
+                            <p>
+                                Proin ultricies neque in ante pellentesque luctus. Vestibulum venenatis mi vel 
+                                orci vulputate, vel faucibus tortor pharetra. Vivamus hendrerit libero vel eros 
+                                tempor, a posuere massa mollis. Morbi facilisis mauris ut lacus ullamcorper 
+                                consequat.
+                            </p>
+                            <p>
+                                Donec venenatis augue ut magna suscipit, non suscipit arcu tristique. Phasellus 
+                                vel diam et enim interdum iaculis. Sed tempor, eros vel suscipit fringilla, nunc 
+                                nibh euismod orci, sed varius ante leo ut lorem. Fusce nec posuere mi
+                            </p>
+                            <p>
+                                Pellentesque facilisis, lectus quis pulvinar pretium, metus orci euismod lacus, 
+                                sed volutpat magna nisl at odio. Fusce aliquet laoreet felis eget commodo. Sed 
+                                pharetra odio id leo mollis, a congue lorem vehicula. Nunc ut dui eu leo 
+                                tristique commodo sit amet vel velit.
+                            </p>
+                        </div>
+                    </section>
+                    <section class="work">
+                        <div style="width: 100px; height: 100px; background-color: red; position: absolute; top: 0;"></div>
+                    </section>
                 </main>
             </div>
             <!-- calculator app -->

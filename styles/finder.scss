@@ -17,12 +17,24 @@
 
 .finder-header{
     position: absolute;
-    border: 1px solid red;
+    // border: 1px solid red;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     width: 650px;
     left: 150px;
     height: 49px;
     z-index: 1;
+
+    .arrow{
+        margin: 0 15px;
+    }
+
+    .search{
+        margin: 0 30px;
+    }
 }
 
 .finder-sidebar{

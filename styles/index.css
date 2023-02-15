@@ -33,10 +33,6 @@ button, input[type=submit], input[type=reset] {
   outline: inherit;
 }
 
-.window-index {
-  z-index: 10;
-}
-
 html {
   overflow-y: hidden;
   overflow-x: hidden;
@@ -85,6 +81,7 @@ body {
   align-items: center;
   gap: 12px;
   padding: 0 12px;
+  z-index: 100;
 }
 .top-nav ul li {
   list-style: none;

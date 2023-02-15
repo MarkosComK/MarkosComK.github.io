@@ -16,7 +16,8 @@ function changeDisplay(button, div, closeBtn){
             this.div.style.display = 'none'
         }
     }
+
 }
 
 var calculator = new changeDisplay(document.querySelector('#calculatorBtn'), document.querySelector('.calculator'), document.querySelector('.close-calculator'))
-var calculator = new changeDisplay(document.querySelector('#finderBtn'), document.querySelector('.finder'), document.querySelector('.close-finder'))
+var finder = new changeDisplay(document.querySelector('#finderBtn'), document.querySelector('.finder'), document.querySelector('.close-finder'))

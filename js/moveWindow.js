@@ -40,7 +40,7 @@ function moveWindow(name, header, divX, divY){
     function focus(e){
         setFocus(this)
     }
-
+    
     function setFocus(e){
         // both codes make only the cliced obj receive the true on  obj.focus so the z-index only became effective on that obj
         // make all the obj.focus receive false
@@ -59,7 +59,6 @@ function moveWindow(name, header, divX, divY){
             }
         }
     }
-
 }
 
 var mouseEndX
@@ -83,3 +82,5 @@ function testing(array, item){
     arrCopy = arrCopy.splice(index, 1)
     return arrCopy
 }
+
+

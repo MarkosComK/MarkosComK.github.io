@@ -12,6 +12,7 @@
 
 .finder-header {
   position: absolute;
+  border: 1px solid red;
   width: 650px;
   left: 150px;
   height: 49px;
@@ -85,4 +86,48 @@
 
 .remove-bullets {
   list-style-type: none;
+}
+
+.finder-main {
+  overflow: auto;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+.finder-main .profile-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.finder-main .profile-wrap img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.finder-main .text-wrap {
+  text-align: center;
+}
+.finder-main .text-wrap p {
+  margin: 48px 0;
+}
+
+/*
+ *  Scrollbar Style
+ */
+#style-1::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: rgba(30, 30, 30, 0);
+}
+
+#style-1::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(30, 30, 30, 0);
+}
+
+#style-1::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #313131;
 }/*# sourceMappingURL=finder.css.map */

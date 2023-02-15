@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Este é o meu portfólio pessoal desenvolvido com objetivo de apresentar e registrar minha evolução com desenvolvimento Front-End.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarkosComK/Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarkosComK/Portfolio/issues"
+  },
+  "homepage": "https://github.com/MarkosComK/Portfolio#readme"
+}

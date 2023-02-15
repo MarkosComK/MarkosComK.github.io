@@ -17,10 +17,6 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-.window-index{
-    z-index: 10;
-}
-
 html{
     overflow-y: hidden;
     overflow-x: hidden;
@@ -71,6 +67,7 @@ body{
         align-items: center;
         gap: 12px;
         padding: 0 12px;
+        z-index: 100;
         li{
             list-style: none;
         }
@@ -88,23 +85,23 @@ body{
     justify-content: space-around;
     align-items: center;
     gap: 10px;
-
+    
     position: absolute;
     color: #f1f1f1;
     width: 250px;
     height: 250px;
-
+    
     margin-top: 5px;
-
+    
     left: -105px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-
+    
     border-radius: 16px;
     .dropdown-flex{
         display: flex;
         justify-content: space-between;
-
+        
         width: 98%;
         height: 48%;
         .dropdown-item{

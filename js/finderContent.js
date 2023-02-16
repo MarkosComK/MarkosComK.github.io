@@ -1,9 +1,8 @@
-import { aboutContent, aboutContent2 } from "./aboutContent.js"
+import { aboutContent, aboutContent2, workContent } from "./aboutContent.js"
 
 // add code to work only when show finder app
 
 
-const workContent = `<div>Ola mundo</div>`
 
 
 const workBtn = document.querySelector('#work-btn')

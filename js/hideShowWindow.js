@@ -11,7 +11,7 @@ function changeDisplay(button, div, closeBtn){
 
     function changeDisplay(){
         if(this.div.style.display == 'none'){
-            this.div.style.display = 'inline'
+            this.div.style.display = 'flex'
         } else{
             this.div.style.display = 'none'
         }

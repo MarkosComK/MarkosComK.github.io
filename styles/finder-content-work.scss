@@ -1,0 +1,39 @@
+.work{
+    width: 600px;
+    height: 600px;
+}
+
+.finder-about-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    width: 100%;
+    .about-card{
+        img{
+            width: 100%;
+        }
+    }
+
+    .card1{
+        height: 300px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .about-cards-bottom{
+        display: flex;
+        width: 100%;
+        height: 200px;
+        gap: 20px;
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        div{
+            border: 1px solid green;
+            width: 50%;
+        }
+    }
+}

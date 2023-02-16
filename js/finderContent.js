@@ -1,9 +1,5 @@
 import { aboutContent, aboutContent2, workContent } from "./aboutContent.js"
 
-// add code to work only when show finder app
-
-
-
 
 const workBtn = document.querySelector('#work-btn')
 const aboutBtn = document.querySelector('#about-btn')

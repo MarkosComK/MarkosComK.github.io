@@ -115,4 +115,4 @@ export const aboutContent2 = `<div>
 </div>
 </div>`
 
-export const workContent = `<div>Ola mundo</div>`
+export const workContent = ``

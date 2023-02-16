@@ -1,10 +1,10 @@
 .finder {
-  display: none;
+  display: flex;
   position: absolute;
   border: 1px solid rgb(54, 54, 54);
   width: 800px;
   height: 500px;
-  left: 600px;
+  left: 400px;
   top: 50px;
   background: #1E1E1E;
   border-radius: 10px;

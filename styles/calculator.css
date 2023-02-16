@@ -18,6 +18,7 @@
 }
 
 .calculator {
+  display: none;
   position: absolute;
   background-color: var(--theme-bg-color);
   height: 400px;

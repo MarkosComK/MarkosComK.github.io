@@ -11,7 +11,11 @@ function changeDisplay(button, div, closeBtn){
 
     function changeDisplay(){
         if(this.div.style.display == 'none'){
-            this.div.style.display = 'flex'
+            if(this.div.id == 'finder'){
+                this.div.style.display = 'flex'
+            } else {
+                this.div.style.display = 'inline'
+            }
         } else{
             this.div.style.display = 'none'
         }

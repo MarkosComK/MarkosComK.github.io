@@ -68,7 +68,7 @@ var mouseStartY
 
 var calculator = new moveWindow(document.querySelector('.calculator'), document.querySelector('.calculator-header'), 50, 50)
 var pomodoro = new moveWindow(document.querySelector('.pomodoro'), document.querySelector('.pomodoro-header'), 450, 50)
-var finder = new moveWindow(document.querySelector('.finder'), document.querySelector('.finder-header'), 600, 50)
+var finder = new moveWindow(document.querySelector('.finder'), document.querySelector('.finder-header'), 400, 50)
 
 const windows = [
     calculator,

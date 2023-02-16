@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="styles/window.css">
     <link rel="stylesheet" href="styles/finder.css">
+    <link rel="stylesheet" href="styles/finder-content-work.css">
     <link rel="stylesheet" href="styles/finder-animation.css">
     <link rel="stylesheet" href="styles/calculator.css">
     <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
@@ -75,7 +76,7 @@
         </header>
         <main>
             <!-- finder app -->
-            <div class="finder" id="finder" style="display: none">
+            <div class="finder" id="finder" style="display: flex">
                 <header class="finder-header">
                     <div>
                         <img class="arrow" src="assets/icons/finder-icons/left-arrow.png" alt="">
@@ -132,15 +133,22 @@
                     <div class="finder-main"></div>
                 </section>
                 <main class="finder-main scrollbar" id="style-1">
-                    <section class="about">
+                    <!-- <section class="about">
                         
-                    </section>
+                    </section> -->
                     <section class="work">
+                        <div class="finder-about-cards">
+                            <div class="about-card card1"><img src="projImagens/space-tourism-website.jpg" alt=""></div>
+                            <div class="about-cards-bottom">
+                                <div class="about-card"><img src="projImagens/calculator-app-main.jpg" alt=""></div>
+                                <div class="about-card"><img src="projImagens/loopstudios-landing-page.jpg" alt=""></div>
+                            </div>
+                        </div>
                     </section>
                 </main>
             </div>
             <!-- calculator app -->
-            <div class="calculator" id="calculator">
+            <div class="calculator" id="calculator" style="display: none">
                 <div class="calculator-header" id="calculator">
                     <header>
                         <button class="circle red close-calculator"></button>

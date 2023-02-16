@@ -13,6 +13,7 @@
         img{
             width: 100%;
         }
+
     }
 
     .card1{
@@ -32,8 +33,16 @@
             object-fit: cover;
         }
         div{
-            border: 1px solid green;
             width: 50%;
         }
     }
+}
+.about-card{
+    transition: 0.5s;
+}
+
+.about-card:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.5s;
 }

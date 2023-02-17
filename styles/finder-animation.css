@@ -10,8 +10,33 @@
   transform: translateX(-100%);
 }
 
+.finder-about-folders a:nth-child(1) {
+  transition: 0.35s;
+  transition-timing-function: ease-out;
+  transition-delay: 10ms;
+}
+
+.finder-about-folders a:nth-child(2) {
+  transition: 0.35s;
+  transition-timing-function: ease-out;
+  transition-delay: 100ms;
+}
+
+.finder-about-folders a:nth-child(3) {
+  transition: 0.35s;
+  transition-timing-function: ease-out;
+  transition-delay: 150ms;
+}
+
+.finder-about-folders a:nth-child(4) {
+  transition: 0.35s;
+  transition-timing-function: ease-out;
+  transition-delay: 200ms;
+}
+
 .show-content {
   opacity: 1;
   filter: blur(0);
   transform: translateY(0);
+  transform: translateX(0);
 }/*# sourceMappingURL=finder-animation.css.map */

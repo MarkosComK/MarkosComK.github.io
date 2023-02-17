@@ -1,5 +1,6 @@
-import { aboutContent, aboutContent2, workContent } from "./aboutContent.js"
-
+import { aboutContent, aboutContent2} from "./aboutContent.js"
+import { workContent } from "./workContent.js"
+import { folderSize } from "./finderFolderSize.js"
 
 const workBtn = document.querySelector('#work-btn')
 const aboutBtn = document.querySelector('#about-btn')
@@ -16,11 +17,14 @@ aboutBtn.addEventListener('click', () => {
 
 workBtn.addEventListener('click', () => {
     about.innerHTML = workContent
+    hiddenContent = document.querySelectorAll('.hidden')
+    hiddenContent.forEach((el) => {observer.observe(el)})
+    folderSize()
 })
-
 // finder content scroll animation
 
-const hiddenContent = document.querySelectorAll('.hidden')
+var hiddenContent = document.querySelectorAll('.hidden')
+console.log(hiddenContent)
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {

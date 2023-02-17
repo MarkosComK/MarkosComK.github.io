@@ -115,4 +115,3 @@ export const aboutContent2 = `<div>
 </div>
 </div>`
 
-export const workContent = ``

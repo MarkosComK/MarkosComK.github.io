@@ -1,46 +1,30 @@
 .work {
-  width: 600px;
+  width: 100%;
   height: 600px;
 }
 
-.finder-about-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 100%;
+.finder-about-folders {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  width: 600px;
 }
-.finder-about-cards .about-card img {
-  width: 100%;
-}
-.finder-about-cards .card1 {
-  height: 300px;
-}
-.finder-about-cards .card1 img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.finder-about-cards .about-cards-bottom {
-  display: flex;
-  width: 100%;
-  height: 200px;
-  gap: 20px;
-}
-.finder-about-cards .about-cards-bottom img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.finder-about-cards .about-cards-bottom div {
-  width: 50%;
+.finder-about-folders a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.about-card {
-  transition: 0.5s;
+.folder {
+  width: 120px;
 }
 
-.about-card:hover {
-  cursor: pointer;
-  transform: scale(1.03);
-  transition: 0.5s;
+.small-img {
+  width: 80px;
+}
+
+.medium-img {
+  width: 90px;
+}
+
+.big-img {
+  width: 100px;
 }/*# sourceMappingURL=finder-content-work.css.map */

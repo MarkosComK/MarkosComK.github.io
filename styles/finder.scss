@@ -48,11 +48,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    ul{
+        button{
+            width: 100%;
+        }
+    }
 }
 
 .finder-buttons{
     height: 46px;
-    // border: 1px solid red;
 
     display: flex;
     align-items: center;
@@ -99,10 +103,13 @@
         height: 13px;
     }
 }
-.tags{
+.size{
     height: 157px;
     header{
         height: 13px;
+    }
+    li{
+        padding-left: 10px;
     }
 }
 .remove-bullets{

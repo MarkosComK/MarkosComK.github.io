@@ -116,16 +116,14 @@
                                     <li class="finder-sidebar-item"><img src="assets/icons/finder-icons/drive.png" alt="">icloud</li>
                                 </ul>
                             </div>
-                            <div class="tags">
+                            <div class="size">
                                 <header>
-                                    <p class="font-change">Tags</p>
+                                    <p class="font-change">Folder size</p>
                                 </header>
                                 <ul class="remove-bullets">
-                                    <li class="finder-sidebar-item">Blue Tag</li>
-                                    <li class="finder-sidebar-item">Orange Tag</li>
-                                    <li class="finder-sidebar-item">Green Tag</li>
-                                    <li class="finder-sidebar-item">Purple Tag</li>
-                                    <li class="finder-sidebar-item">Teal Tag</li>
+                                    <button id="smallBtn" class="finder-sidebar-item"><li>Small</li></button>
+                                    <button id="mediumBtn" class="finder-sidebar-item"><li >Medium</li></button>
+                                    <button id="bigBtn" class="finder-sidebar-item"><li >Big</li></button>
                                 </ul>
                             </div>
                         </div>
@@ -137,12 +135,35 @@
                         
                     </section> -->
                     <section class="work">
-                        <div class="finder-about-cards">
-                            <div class="about-card card1"><img src="projImagens/space-tourism-website.jpg" alt=""></div>
-                            <div class="about-cards-bottom">
-                                <div class="about-card"><img src="projImagens/calculator-app-main.jpg" alt=""></div>
-                                <div class="about-card"><img src="projImagens/loopstudios-landing-page.jpg" alt=""></div>
-                            </div>
+                        <div class="finder-about-folders">
+                            <a href="https://markoscomk.github.io/front-end-mentor-solutions/calculator-app-main/" target="_blank">
+                                <div class="folder">
+                                    <img class="small-img" id="folder-img" src="assets/icons/finder-icons/js-folder.png" alt="">
+                                    <p>JavaScript</p>
+                                    <p>calculator</p>
+                                </div>
+                            </a>
+                            <a href="https://markoscomk.github.io/pomodoro-clock/" target="_blank">
+                                <div class="folder">
+                                    <img class="small-img" id="folder-img" src="assets/icons/finder-icons/js-folder.png" alt="">
+                                    <p>Pomodoro</p>
+                                    <p>clock</p>
+                                </div>
+                            </a>
+                            <a href="https://space-tourism-website.netlify.app/" target="_blank">
+                                <div class="folder">
+                                    <img class="small-img" id="folder-img" src="assets/icons/finder-icons/react-folder.png" alt="">
+                                    <p>Space Tourism</p>
+                                    <p>landing page</p>
+                                </div>
+                            </a>
+                            <a href="https://github.com/MarkosComK" target="_blank">
+                                <div class="folder">
+                                    <img class="small-img" id="folder-img" src="assets/icons/finder-icons/github-folder.png" alt="">
+                                    <p>Visit my</p>
+                                    <p>Github</p>
+                                </div>
+                            </a>
                         </div>
                     </section>
                 </main>
@@ -206,5 +227,6 @@
     <script src="js/hideShowWindow.js"></script>
     <script src="js/dropmenu.js"></script>
     <script type="module" src="js/finderContent.js"></script>
+    <script src="js/finderFolderSize.js"></script>
 </body>
 </html>

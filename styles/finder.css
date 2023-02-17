@@ -38,6 +38,9 @@
   flex-direction: column;
   align-items: center;
 }
+.finder-sidebar ul button {
+  width: 100%;
+}
 
 .finder-buttons {
   height: 46px;
@@ -85,11 +88,14 @@
   height: 13px;
 }
 
-.tags {
+.size {
   height: 157px;
 }
-.tags header {
+.size header {
   height: 13px;
+}
+.size li {
+  padding-left: 10px;
 }
 
 .remove-bullets {
